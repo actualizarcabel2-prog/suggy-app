@@ -48,14 +48,6 @@
     },
     "plugins": [
       [
-        "expo-notifications",
-        {
-          "icon": "./assets/icon.png",
-          "color": "#25D366",
-          "sounds": []
-        }
-      ],
-      [
         "expo-image-picker",
         {
           "photosPermission": "Suggy necesita acceso a tus fotos para enviarlas.",
