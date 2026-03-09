@@ -3,9 +3,11 @@
 // Suggy = bot WhatsApp alojado 24/7 en VPS DigitalOcean 46.101.96.230
 // ============================================================
 
-export const VPS_URL      = 'https://cure-everything-studios-ana.trycloudflare.com';
-// NOTA: URL cambia al reiniciar el VPS. Obtener nueva URL con:
-//   pm2 logs cloudflare-tunnel --lines 10  (en VPS)
+export const VPS_URL      = 'https://saving-gloves-booking-deviant.trycloudflare.com';
+// NOTA: URL cambia al reiniciar el VPS.
+// SOLUCIÓN AUTOMÁTICA: el bot detecta el cambio al arrancar y manda la nueva URL por WhatsApp
+// Para obtener URL manual: pm2 logs cloudflare-tunnel --lines 10  (en VPS)
+// URL fija pendiente: comprar dominio en https://dash.cloudflare.com
 
 export const APP_PASSWORD = 'cabel1n3'; // contraseña universal para todos los clientes
 
