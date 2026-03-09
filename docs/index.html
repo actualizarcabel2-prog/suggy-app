@@ -3,245 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SuggyApp — Instalación</title>
+  <title>SuggyApp — Acceso</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0D1117;
-      color: #E6EDF3;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .card {
-      background: #161B22;
-      border: 1px solid #30363D;
-      border-radius: 16px;
-      padding: 40px 32px;
-      max-width: 420px;
-      width: 100%;
-      text-align: center;
-    }
-    .logo { font-size: 52px; margin-bottom: 12px; }
-    h1 { font-size: 26px; font-weight: 700; color: #25D366; margin-bottom: 6px; }
-    .subtitle { color: #8B949E; font-size: 14px; margin-bottom: 32px; }
-
-    /* LOGIN */
-    #login-section input {
-      width: 100%;
-      padding: 12px 16px;
-      background: #0D1117;
-      border: 1px solid #30363D;
-      border-radius: 8px;
-      color: #E6EDF3;
-      font-size: 16px;
-      margin-bottom: 12px;
-      outline: none;
-      letter-spacing: 2px;
-      text-align: center;
-    }
-    #login-section input:focus { border-color: #25D366; }
-    #login-section button {
-      width: 100%;
-      padding: 13px;
-      background: #25D366;
-      color: #0D1117;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    #login-section button:hover { background: #1ebe59; }
-    .error { color: #F85149; font-size: 13px; margin-top: 8px; display: none; }
-
-    /* CONTENT */
-    #content-section { display: none; }
-    .step {
-      background: #0D1117;
-      border: 1px solid #30363D;
-      border-radius: 10px;
-      padding: 16px;
-      margin-bottom: 12px;
-      text-align: left;
-    }
-    .step-num {
-      display: inline-block;
-      width: 24px; height: 24px;
-      background: #25D366;
-      color: #0D1117;
-      border-radius: 50%;
-      font-size: 12px;
-      font-weight: 700;
-      text-align: center;
-      line-height: 24px;
-      margin-right: 8px;
-      flex-shrink: 0;
-    }
-    .step-title { font-weight: 600; font-size: 14px; display: flex; align-items: center; margin-bottom: 6px; }
-    .step-desc { font-size: 13px; color: #8B949E; padding-left: 32px; }
-    .step-desc a { color: #25D366; text-decoration: none; }
-    .step-desc a:hover { text-decoration: underline; }
-
-    .qr-box {
-      background: white;
-      border-radius: 12px;
-      padding: 12px;
-      display: inline-block;
-      margin: 20px 0;
-    }
-    .qr-box img { display: block; width: 200px; height: 200px; }
-
-    .badge {
-      display: inline-block;
-      background: #21262D;
-      border: 1px solid #30363D;
-      border-radius: 20px;
-      padding: 4px 12px;
-      font-size: 12px;
-      color: #8B949E;
-      margin-bottom: 20px;
-    }
-    .btn-download {
-      display: block;
-      width: 100%;
-      padding: 13px;
-      background: #238636;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      margin-bottom: 10px;
-      transition: background 0.2s;
-    }
-    .btn-download:hover { background: #2ea043; }
-    .btn-secondary {
-      display: block;
-      width: 100%;
-      padding: 11px;
-      background: transparent;
-      color: #25D366;
-      border: 1px solid #25D366;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      margin-bottom: 10px;
-      transition: all 0.2s;
-    }
-    .btn-secondary:hover { background: #25D36620; }
-    .divider { border: none; border-top: 1px solid #30363D; margin: 20px 0; }
-    .footer { font-size: 11px; color: #484F58; margin-top: 16px; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0D1117;color:#E6EDF3;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+    .card{background:#161B22;border:1px solid #30363D;border-radius:16px;padding:36px 28px;max-width:420px;width:100%;text-align:center}
+    .logo{font-size:50px;margin-bottom:10px}
+    h1{font-size:24px;font-weight:700;color:#25D366;margin-bottom:4px}
+    .sub{color:#8B949E;font-size:13px;margin-bottom:28px}
+    label{display:block;text-align:left;font-size:12px;color:#8B949E;margin-bottom:4px;margin-top:12px}
+    input{width:100%;padding:11px 14px;background:#0D1117;border:1px solid #30363D;border-radius:8px;color:#E6EDF3;font-size:15px;outline:none;transition:border .2s}
+    input:focus{border-color:#25D366}
+    .btn{width:100%;padding:13px;background:#25D366;color:#0D1117;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;margin-top:16px;transition:background .2s}
+    .btn:hover{background:#1ebe59}
+    .btn:disabled{background:#30363D;color:#484F58;cursor:not-allowed}
+    .btn-sec{width:100%;padding:11px;background:transparent;color:#25D366;border:1px solid #25D366;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;margin-top:8px;text-decoration:none;display:block}
+    .msg{font-size:13px;margin-top:10px;padding:10px;border-radius:8px;display:none}
+    .msg.ok{background:#238636;color:#fff;display:block}
+    .msg.err{background:#da3633;color:#fff;display:block}
+    .msg.info{background:#1F6FEB;color:#fff;display:block}
+    hr{border:none;border-top:1px solid #30363D;margin:20px 0}
+    .step{background:#0D1117;border:1px solid #30363D;border-radius:10px;padding:14px;margin-bottom:10px;text-align:left}
+    .sn{display:inline-flex;width:22px;height:22px;background:#25D366;color:#0D1117;border-radius:50%;font-size:11px;font-weight:700;align-items:center;justify-content:center;margin-right:8px;flex-shrink:0}
+    .st{font-weight:600;font-size:13px;display:flex;align-items:center;margin-bottom:4px}
+    .sd{font-size:12px;color:#8B949E;padding-left:30px}
+    .sd a{color:#25D366;text-decoration:none}
+    .qrbox{background:#fff;border-radius:10px;padding:10px;display:inline-block;margin:14px 0}
+    .qrbox img{display:block;width:190px;height:190px}
+    .badge{display:inline-block;background:#238636;color:#fff;border-radius:20px;padding:4px 14px;font-size:12px;font-weight:600;margin-bottom:16px}
+    .info-box{background:#0D1117;border:1px solid #25D366;border-radius:8px;padding:12px;font-size:13px;margin-bottom:16px;text-align:left}
+    .info-box span{color:#25D366;font-weight:700}
+    #s-login,#s-reg,#s-done{display:none}
   </style>
 </head>
 <body>
 <div class="card">
   <div class="logo">🤖</div>
   <h1>SuggyApp</h1>
-  <p class="subtitle">Tu asistente personal con IA — acceso privado</p>
+  <p class="sub">Asistente con IA · Acceso privado</p>
 
-  <!-- LOGIN -->
-  <div id="login-section">
-    <input type="password" id="pass-input" placeholder="Contraseña de acceso"
-           onkeydown="if(event.key==='Enter')checkPass()">
-    <button onclick="checkPass()">Entrar →</button>
-    <div class="error" id="err-msg">Contraseña incorrecta. Contacta con tu administrador.</div>
+  <!-- PASO 1: CONTRASENA -->
+  <div id="s-login">
+    <p style="font-size:13px;color:#8B949E;margin-bottom:16px">Introduce la contraseña que te han dado</p>
+    <label>Contraseña</label>
+    <input type="password" id="p1" placeholder="••••••••" onkeydown="if(event.key==='Enter')chk()">
+    <button class="btn" onclick="chk()">Continuar →</button>
+    <div class="msg err" id="e1"></div>
   </div>
 
-  <!-- CONTENIDO (tras login) -->
-  <div id="content-section">
-    <div class="badge">✅ Acceso concedido</div>
+  <!-- PASO 2: NOMBRE -->
+  <div id="s-reg">
+    <div class="msg info" style="display:block;margin-bottom:16px">Contraseña correcta — elige tu nombre</div>
+    <label>Tu nombre (Suggy te llamará así)</label>
+    <input type="text" id="uname" placeholder="Ej: Carlos, Ana..." maxlength="30" onkeydown="if(event.key==='Enter')reg()">
+    <button class="btn" id="breg" onclick="reg()">Registrarme y entrar →</button>
+    <div class="msg" id="mreg"></div>
+  </div>
+
+  <!-- PASO 3: INSTALACION -->
+  <div id="s-done">
+    <div class="badge">Registrado</div>
+    <div class="info-box" id="wbox"></div>
 
     <div class="step">
-      <div class="step-title"><span class="step-num">1</span>Descarga Expo Go</div>
-      <div class="step-desc">
-        Instala <a href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank">Expo Go</a>
-        desde Google Play en tu Android
-      </div>
+      <div class="st"><span class="sn">1</span>Descarga Expo Go</div>
+      <div class="sd"><a href="https://play.google.com/store/apps/details?id=host.exp.exponent" target="_blank">Google Play — Expo Go →</a></div>
     </div>
-
     <div class="step">
-      <div class="step-title"><span class="step-num">2</span>Escanea el QR</div>
-      <div class="step-desc">Abre Expo Go → "Scan QR code" y apunta al código de abajo</div>
-      <div style="text-align:center">
-        <div class="qr-box">
-          <img id="qr-img" src="" alt="QR SuggyApp">
+      <div class="st"><span class="sn">2</span>Escanea este QR con Expo Go</div>
+      <div class="sd" style="text-align:center;padding-left:0;padding-top:8px">
+        <div class="qrbox">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=190x190&data=https%3A%2F%2Fgithub.com%2Factualizarcabel2-prog%2Fsuggy-app" alt="QR">
         </div>
-        <div style="font-size:11px;color:#8B949E">QR de instalación rápida</div>
+        <div style="font-size:11px;color:#8B949E">Expo Go → Scan QR code</div>
       </div>
     </div>
-
     <div class="step">
-      <div class="step-title"><span class="step-num">3</span>Inicia sesión en la app</div>
-      <div class="step-desc">
-        Pon tu <strong>nombre</strong> (el que quieras) y contraseña: <strong>cabel1n3</strong>
+      <div class="st"><span class="sn">3</span>Login en la app</div>
+      <div class="sd">
+        Nombre: <strong id="snombre" style="color:#25D366"></strong><br>
+        Contraseña: <strong style="color:#25D366">cabel1n3</strong>
       </div>
     </div>
 
-    <hr class="divider">
-
-    <a class="btn-download"
-       href="https://github.com/actualizarcabel2-prog/suggy-app/releases/download/v1.0.0/SuggyApp-v1.0.0-source.zip"
-       target="_blank">
-      ⬇️ Descargar código fuente (ZIP)
+    <hr>
+    <a class="btn-sec" href="https://github.com/actualizarcabel2-prog/suggy-app/releases/tag/v1.0.0" target="_blank">
+      Ver release en GitHub
     </a>
-
-    <a class="btn-secondary"
-       href="https://github.com/actualizarcabel2-prog/suggy-app/releases/tag/v1.0.0"
-       target="_blank">
-      📦 Ver release en GitHub
-    </a>
-
-    <div class="footer">
-      SuggyApp v1.0.0 · Acceso privado · Solo para usuarios autorizados
-    </div>
+    <button class="btn-sec" onclick="salir()" style="margin-top:8px;cursor:pointer">Cambiar usuario</button>
+    <p style="font-size:11px;color:#484F58;margin-top:14px">SuggyApp v1.0.0 · Solo usuarios autorizados</p>
   </div>
 </div>
 
 <script>
-  // Contraseña hasheada en cliente (simple ofuscación)
-  const HASH = "3a9f2b1c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a";
-
-  // QR apuntando a esta misma página GitHub Pages
-  const PAGE_URL = "https://actualizarcabel2-prog.github.io/suggy-app/";
-  document.getElementById("qr-img").src =
-    "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + encodeURIComponent(PAGE_URL);
-
-  function simpleHash(s) {
-    // hash simple para no exponer la contraseña en texto plano
-    let h = 0;
-    for (let i = 0; i < s.length; i++) {
-      h = ((h << 5) - h) + s.charCodeAt(i);
-      h |= 0;
-    }
-    return Math.abs(h).toString(16);
-  }
-
-  function checkPass() {
-    const val = document.getElementById("pass-input").value;
-    // Contraseña: cabel1n3
-    if (val === "cabel1n3") {
-      document.getElementById("login-section").style.display = "none";
-      document.getElementById("content-section").style.display = "block";
-      localStorage.setItem("suggy_auth", "ok");
-    } else {
-      document.getElementById("err-msg").style.display = "block";
-    }
-  }
-
-  // Auto-login si ya entró antes
-  if (localStorage.getItem("suggy_auth") === "ok") {
-    document.getElementById("login-section").style.display = "none";
-    document.getElementById("content-section").style.display = "block";
-  }
+var VPS="https://saving-gloves-booking-deviant.trycloudflare.com";
+var PASS="cabel1n3";
+function sv(){try{return JSON.parse(localStorage.getItem("su")||"null")}catch(e){return null}}
+function show(id){["s-login","s-reg","s-done"].forEach(function(s){document.getElementById(s).style.display=s===id?"block":"none"})}
+window.onload=function(){var u=sv();if(u&&u.nombre){fillDone(u);show("s-done")}else{show("s-login")}};
+function fillDone(u){
+  document.getElementById("snombre").textContent=u.nombre;
+  document.getElementById("wbox").innerHTML="Bienvenido/a, <span>"+u.nombre+"</span><br>Alta: "+u.fecha_alta+" &nbsp;·&nbsp; Válido hasta: "+u.fecha_vencimiento;
+}
+function chk(){
+  var v=document.getElementById("p1").value.trim();
+  if(v===PASS){show("s-reg");setTimeout(function(){document.getElementById("uname").focus()},100)}
+  else{var e=document.getElementById("e1");e.textContent="Contraseña incorrecta.";e.className="msg err"}
+}
+function reg(){
+  var n=document.getElementById("uname").value.trim();
+  if(!n||n.length<2){sm("mreg","err","Mínimo 2 caracteres");return}
+  var b=document.getElementById("breg");b.disabled=true;b.textContent="Registrando...";
+  fetch(VPS+"/api/register",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({nombre:n,password:PASS})})
+  .then(function(r){return r.json()})
+  .then(function(d){
+    if(d.ok){
+      var u={nombre:d.nombre,token:d.token,fecha_alta:d.fecha_alta,fecha_vencimiento:d.fecha_vencimiento};
+      localStorage.setItem("su",JSON.stringify(u));
+      fillDone(u);show("s-done");
+    }else{sm("mreg","err",d.error||"Error al registrar");b.disabled=false;b.textContent="Registrarme y entrar →"}
+  })
+  .catch(function(){sm("mreg","err","Sin conexión. Inténtalo de nuevo.");b.disabled=false;b.textContent="Registrarme y entrar →"});
+}
+function salir(){localStorage.removeItem("su");show("s-login")}
+function sm(id,t,x){var e=document.getElementById(id);e.className="msg "+t;e.textContent=x}
 </script>
 </body>
 </html>
