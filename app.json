@@ -15,17 +15,17 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.cabel.suggyapp",
       "infoPlist": {
-        "NSCameraUsageDescription": "Suggy necesita acceso a la cámara para enviar fotos y vídeos.",
-        "NSMicrophoneUsageDescription": "Suggy necesita el micrófono para enviar notas de voz.",
+        "NSCameraUsageDescription": "Suggy necesita acceso a la cÃ¡mara para enviar fotos y vÃ­deos.",
+        "NSMicrophoneUsageDescription": "Suggy necesita el micrÃ³fono para enviar notas de voz.",
         "NSPhotoLibraryUsageDescription": "Suggy necesita acceso a tus fotos para enviarlas.",
-        "NSPhotoLibraryAddUsageDescription": "Suggy guardará tus conversaciones y archivos aquí."
+        "NSPhotoLibraryAddUsageDescription": "Suggy guardarÃ¡ tus conversaciones y archivos aquÃ­."
       }
     },
     "android": {
       "package": "com.cabel.suggyapp",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundColor": "#0D1117"
       },
       "permissions": [
@@ -51,13 +51,13 @@
         "expo-image-picker",
         {
           "photosPermission": "Suggy necesita acceso a tus fotos para enviarlas.",
-          "cameraPermission": "Suggy necesita la cámara para hacer fotos y vídeos."
+          "cameraPermission": "Suggy necesita la cÃ¡mara para hacer fotos y vÃ­deos."
         }
       ],
       [
         "expo-av",
         {
-          "microphonePermission": "Suggy necesita el micrófono para enviar notas de voz."
+          "microphonePermission": "Suggy necesita el micrÃ³fono para enviar notas de voz."
         }
       ]
     ],
