@@ -24,7 +24,7 @@
     "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
-    "eas-cli": "14.7.1"
+    "eas-cli": "^18.3.0"
   },
   "private": true
 }
