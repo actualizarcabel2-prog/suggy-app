@@ -1,33 +1,17 @@
-// ============================================================
-// App.js — SuggyApp punto de entrada
-// Suggy = bot WhatsApp 24/7 en VPS DigitalOcean 46.101.96.230
-// ============================================================
-
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StatusBar } from 'expo-status-bar';
-import LoginScreen from './src/screens/LoginScreen';
-import ChatScreen  from './src/screens/ChatScreen';
-import { APP_CONFIG } from './src/config';
-
-const Stack = createNativeStackNavigator();
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <StatusBar style="light" />
-      <Stack.Navigator
-        initialRouteName="Login"
-        screenOptions={{
-          headerShown: false,
-          animation: 'slide_from_right',
-          contentStyle: { backgroundColor: APP_CONFIG.colors.background },
-        }}
-      >
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Chat"  component={ChatScreen}  />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View style={styles.container}>
+      <Text style={styles.text}>Suggy</Text>
+      <Text style={styles.sub}>v1.0.0 — test OK</Text>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: '#0D1117', alignItems: 'center', justifyContent: 'center' },
+  text:      { color: '#25D366', fontSize: 48, fontWeight: 'bold' },
+  sub:       { color: '#8B949E', fontSize: 14, marginTop: 8 },
+});
